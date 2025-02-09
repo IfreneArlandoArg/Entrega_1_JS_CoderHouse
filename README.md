@@ -3,7 +3,7 @@ Entrega correspondiendo a la 1ra entrega para el curso de javaScript CoderHouse.
 
 ## Enunciado.
 
-* Objetivos generales :*
+* Objetivos generales : *
 
 Armar la estructura base del simulador
 
