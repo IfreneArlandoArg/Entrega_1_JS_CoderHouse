@@ -14,6 +14,9 @@ function schemaProducto(nombre, categoria, talla, color, precio){
 }
 
 //Fn Interface Menu...
+function opcionMenu(){
+    return parseInt(prompt(`Indumentaria Galeano para hombre.\n\n1 - Elegir producto(s).\n2 - Hacer Check-out.\n3 - Salir.`));
+}
 
 
 //Fn Interface elegir producto(s)...
@@ -39,3 +42,24 @@ const productosDisponible = [
   ];
   
   console.log(productosDisponible);
+
+  let menu = opcionMenu();
+
+
+  while(menu !== 3){
+
+    switch(menu){
+        case 1:
+            //fn elegirProductos() 
+            break;
+        case 2:
+            //fn checkOut()
+            break;
+        default:
+            console.log("Opción no válida");
+            break;
+
+    }
+
+    menu = opcionMenu();
+  }
