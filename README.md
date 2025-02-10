@@ -38,7 +38,7 @@ Esto implica :
 ## Menu.
 
 Loop While para que el usuario pueda elegir entre las opciones del Menu.
-* cantidad productos elegidos y total a pagar.
+* Cantidad productos elegidos y total a pagar.
 * Elegir Producto (redirrecciona a interface correspondiente).
 * Hacer Check-out (redirrecciona a interface correspondiente).
 * Salir (cerrar el loop y renderizar HTML).
