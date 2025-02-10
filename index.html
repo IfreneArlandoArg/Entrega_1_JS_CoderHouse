@@ -14,10 +14,48 @@
 
     <h3>Simulador compra de indumentaria (ropas para hombre). </h3>
     <h4>Funcionalidades</h4>
-    <ul>
-        <li>Elegir producto</li>
-        <li>Hacer check-out</li>
-    </ul>
+<ul>
+    <li>Elegir producto
+        <ol>
+            <li>El sistema muestra un listado de productos con precios.</li>
+            <li>El usuario selecciona un producto y confirma (Ok).</li>
+            <li>El sistema pregunta talla del producto seleccionado.</li>
+            <li>El usuario elige talla y confirma (Ok).</li>
+            <li>El sistema pregunta por color del producto seleccionado.</li>
+            <li>El usuario elige color y confirma (Ok).</li>
+            <li>El sistema pregunta si quiere seguir comprando.</li>
+            <li>El usuario elige si quiere seguir comprando o no.</li>
+            <li>Si el usuario elige seguir comprando, el sistema redirige a la interfaz inicial de Elegir Producto.</li>
+            <li>Si el usuario elige no seguir comprando, el sistema redirige a la interfaz principal (menu).</li>
+        </ol>
+    </li>
+    <br>
+    <li>Hacer check-out
+        <ol>
+            <li>Si el carrito está vacío, el sistema muestra un mensaje de error y agradece.</li>
+            <li>Si hay productos en el carrito:
+                <ul>
+                    <li>El sistema pide al usuario ingresar su nombre completo para la facturación.</li>
+                    <li>El usuario ingresa su nombre completo y confirma (Ok).</li>
+                    <li>El sistema pide al usuario ingresar su DNI.</li>
+                    <li>El usuario ingresa su DNI y confirma (Ok).</li>
+                    <li>El sistema pide dirección de entrega.</li>
+                    <li>El usuario ingresa dirección de entrega y confirma (Ok).</li>
+                    <li>El sistema pregunta teléfono de contacto.</li>
+                    <li>El usuario ingresa teléfono de contacto y confirma (Ok).</li>
+                    <li>El sistema informa de la cantidad que está a punto de pagar.</li>
+                    <li>El usuario confirma (Ok).</li>
+                    <li>El sistema confirma el pago.</li>
+                    <li>El sistema muestra la factura con nombre, DNI del cliente, listado de productos comprados y total de la venta.</li>
+                    <li>El sistema muestra un mensaje de agradecimiento.</li>
+                    <li>El sistema guarda la venta (cliente + carrito), resetea el carrito (para la próxima venta) y redirige a la interfaz principal (menu).</li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ul>
+
+
     
 </body>
 </html>

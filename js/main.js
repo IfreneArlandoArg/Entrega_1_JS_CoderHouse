@@ -116,7 +116,9 @@ function mostrarNombrePrecioProducto(arrProductos){
 //Elige producto, personaliza, y pushea a un carrito...
 function elegirProducto(productosDisponible, carrito){
 
-    
+let seguirComprando; 
+
+do{
 
     let stringPrompt = `Productos disponibles.\n\nElegir producto :\n\n`
     // for(let i = 0; i < productosDisponible.length; i++){
@@ -136,6 +138,13 @@ function elegirProducto(productosDisponible, carrito){
     else{
         alert(`La opción ${opcion} no está dentro de lo qué se propone...\nOperación cancelada...`);
     }
+
+    seguirComprando = parseInt(prompt(`¿Desea seguir comprando? (1) Si / (2) No`));
+    
+
+}
+while(seguirComprando === 1);
+    
 
     
     
@@ -158,6 +167,7 @@ function calcularTotalPrecio(carrito){
 function checkOut(ventas, carrito){
     let total = calcularTotalPrecio(carrito);
 
+    if (total > 0){
     let cliente;
 
     let nombreCompleto = prompt(`Ingrese su nombre completo: `);
@@ -206,6 +216,13 @@ function checkOut(ventas, carrito){
 
     alert(stringFactura);
     console.log(stringFactura);
+
+    }
+    else{
+        alert(`No hay productos en el carrito\nPor lo tanto no se puede hacer el check-out...`);
+    }
+
+    alert(`¡Gracias por elegir Indumentaria Galeano para hombre 😊😊😊😎 !`);
     
      
     
